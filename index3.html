@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="css/waves.min.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<style>
+			
+		</style>
+	</head>
+	<body>
+
+		<div data-role="page" id="demo-page">
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="index.html" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'  data-ajax="false"><i class="zmdi zmdi-chevron-left  zmdi-hc-2x"></i></a>
+				<h1 class="wow fadeIn headerTitle" data-wow-delay='0.4s'><a href="index2.html" class="ui-btn ui-btn-right wow fadeIn " data-wow-delay='0.8s' data-ajax="false"><img src="images/logo-sm.png" class="headerLogo"></h1></a>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+				<h5 class="ui-title-h5"><span>潜在客户信息录入</span></h5>
+				<div class="box btbr10">
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-1" class="ui-inline">公司名称</label></div>
+						<div class="col-xs-9"><input type="text" name="input-1" id="input-1" data-clear-btn="true" placeholder="请输入公司名称"></div>
+					</div>
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-2" class="ui-inline">公司地址</label></div>
+						<div class="col-xs-9"><input type="text" name="input-2" id="input-2" data-clear-btn="true" placeholder="请输入公司地址"></div>
+					</div>
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-3" class="ui-inline">联系人</label></div>
+						<div class="col-xs-9"><input type="text" name="input-3" id="input-3" data-clear-btn="true" placeholder="请输入联系人"></div>
+					</div>
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-4" class="ui-inline">联系方式</label></div>
+						<div class="col-xs-9"><input type="text" name="input-4" id="input-4" data-clear-btn="true" placeholder="请输入联系方式"></div>
+					</div>
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-5" class="ui-inline">职务</label></div>
+						<div class="col-xs-9"><input type="text" name="input-5" id="input-5" data-clear-btn="true" placeholder="请输入职务"></div>
+					</div>
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-6" class="ui-inline">老板</label></div>
+						<div class="col-xs-9"><input type="text" name="input-6" id="input-6" data-clear-btn="true" placeholder="请输入老板"></div>
+					</div>
+					<div class="row putInBox">
+						<div class="col-xs-3"><label for="input-7" class="ui-inline">老板电话</label></div>
+						<div class="col-xs-9"><input type="text" name="input-7" id="input-7" data-clear-btn="true" placeholder="请输入老板电话"></div>
+					</div>
+				</div>
+				<div class="box btbr10">
+					<table class="ui-table ui-body-d ui-shadow table-stripe ui-responsive">
+						<thead>
+							<tr>
+								<th width="40%">类型</th><th width="20%">数量</th><th width="40%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>倍捻机</td>
+								<td>10</td>
+								<td><a href="#dialogpopup"data-rel="popup"  data-position-to="window" class="mr10">修改</a><a href="#" class="">删除</a></td>
+							</tr>
+							<tr>
+								<td>倍捻机</td>
+								<td>10</td>
+								<td><a href="#" class="mr10">增加</a><a href="#dialogpopup"data-rel="popup"  data-position-to="window" class="mr10">修改</a><a href="#" class="">删除</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div data-role="popup" id="dialogpopup"> 
+       					<a href="#" data-rel="back" class="ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+       					<div class="dialog-header"><h5>修改</h5></div>
+						<div id="popupBasicDiv-1" class="dialog-content">
+							<div class="row putInBox">
+								<div class="col-xs-3"><label for="dialog-input-1" class="ui-inline">类型</label></div>
+								<div class="col-xs-9">
+									<select>
+										<option>倍捻机</option>
+										<option>倍捻机</option>
+									</select>
+								</div>
+							</div>
+							<div class="row putInBox">
+								<div class="col-xs-3"><label for="dialog-input-2" class="ui-inline">数量</label></div>
+								<div class="col-xs-9"><input type="number" name="dialog-input-2" id="dialog-input-2" data-clear-btn="true" value="100"></div>
+							</div>
+							<div class="dialog-footer">
+								<a href="#" class="optionCancel" data-rel="back" data-transition="flow">取消</a>
+								<a href="#" class="optionConfirm" data-rel="back">确定</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="box">
+					<table class="ui-table ui-body-d ui-shadow table-stripe ui-responsive">
+						<thead>
+							<tr>
+								<th width="20%">职务</th><th width="40%">联系方式</th><th width="40%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>厂长</td>
+								<td>13112345678</td>
+								<td><a href="#" class="mr10">修改</a><a href="#" class="">删除</a></td>
+							</tr>
+							<tr>
+								<td>电工</td>
+								<td>13112345678</td>
+								<td><a href="#" class="mr10">增加</a><a href="#" class="mr10">修改</a><a href="#" class="">删除</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+				
+				<div data-role="footer"  data-position="fixed" id="ui-footer" data-tap-toggle="false">
+				<div class="row">
+					<div class="col-xs-6 footerBtn flt"><a href="#"  class="ui-btn  clr-btn-orange ui-btn-inline" data-ajax="false">保存提交</a></div>
+					<div class="col-xs-6 footerBtn frt" ><a href="index4.html" class="ui-btn  clr-btn-orange ui-btn-inline" data-ajax="false">直接推荐意向客户</a></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/waves.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="js/nd2settings.js"></script>
+		<script>
+			$(function(){
+				
+			});
+			
+		</script>
+	</body>
+</html>
